@@ -1,29 +1,10 @@
-const categories = {
-  type: Income,
-  Value: [
-    "Business",
-    "Investments",
-    "Extra income",
-    "Deposits",
-    "Lottery",
-    "Gifts",
-    "Salary",
-    "Savings",
-    "Rental income",
-  ],
-  type: Expense,
-  Value: [
-    "Business",
-    "Investments",
-    "Extra income",
-    "Deposits",
-    "Lottery",
-    "Gifts",
-    "Salary",
-    "Savings",
-    "Rental income",
-  ],
+const mockdata = require("../config/data");
+
+const getAllCategory = (page, perpage) => {
+  const categories = mockdata.categories;
+  return categories;
 };
+
 module.exports = {
-  categories,
+  getAllCategory,
 };
